@@ -1,0 +1,46 @@
+name: Bug report
+description: Something does not work, looks wrong, or is slow
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Issues here are public. Do not post recordings, private locations or your encryption salt. Reports and logs are encrypted by default: decrypt and check one before attaching it.
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options: [macOS, iOS, Apple TV, Other]
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: App version and OS version
+      description: App version is on the About tab.
+      placeholder: "Sonic Sentinel 0.1 (1), macOS 26.1"
+    validations:
+      required: true
+  - type: input
+    id: input
+    attributes:
+      label: Audio input and sample rate
+      description: The device name, and the "up to ... kHz" shown in the header.
+      placeholder: "MacBook Pro Microphone, up to 24 kHz"
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you expected, and what you saw instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: "1. Open the Inputs tab ..."
+  - type: textarea
+    id: extra
+    attributes:
+      label: Screenshots or other details
+      description: A screenshot of the performance panel (Settings > Graphics) helps for slowness.
