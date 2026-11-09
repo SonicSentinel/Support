@@ -4,7 +4,8 @@ labels: ["question"]
 body:
   - type: markdown
     attributes:
-      value: Please check the [support page](https://sonicsentinel.github.io/support/) first: it answers the common questions.
+      value: |
+        Please check the [support page](https://sonicsentinel.github.io/support/) first. It answers the common questions.
   - type: textarea
     id: question
     attributes:
